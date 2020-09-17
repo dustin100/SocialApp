@@ -6,7 +6,7 @@ import Alert from './components/layout/Alert';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import {loadUser} from './actions/auth';
-import setAuthToken from './utills/setAuthToken'
+import setAuthToken from './utils/setAuthToken'
 import { Provider } from 'react-redux';
 import store from './store';
 import './App.css';
