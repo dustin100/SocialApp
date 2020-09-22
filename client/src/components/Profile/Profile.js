@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Spinner from '../layout/Spinner';
 import ProfileTop from './ProfileTop';
 import ProfileAbout from './ProfileAbout';
+import ProfileGithub from './ProfileGithub';
 import ProfileExperience from './ProfileExperience';
 import ProfileEducation from './ProfileEducation';
 import { Link } from 'react-router-dom';
@@ -73,6 +74,9 @@ const Profile = ({
 								<h4>No education added</h4>
 							)}
 						</div>
+						{profile.githubusername && (
+							<ProfileGithub username={profile.githubusername} />
+						)}
 					</div>
 				</Fragment>
 			)}
