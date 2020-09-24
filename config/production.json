@@ -1,0 +1,6 @@
+{
+    "mongoURI": "mongodb+srv://Dustin:Dustin123@soicalapp.td0py.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "jwtSecret": "coolNewSecretToken",
+    "githubClientId": "3478ec637e792cefc199",
+    "githubSecret": "03983bc4242138dbeedbd827cb806fef2ec50134"
+}
