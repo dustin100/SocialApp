@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { setAlert, SetAlert } from './alert';
+import { setAlert } from './alert';
 import {
 	GET_POSTS,
 	POST_ERROR,
@@ -76,9 +76,9 @@ export const removeLike = (id) => async (dispatch) => {
 // Delete post
 export const deletePost = (id) => async (dispatch) => {
 	try {
-		const res = await axios.delete(`/api/posts/${id}`);
+		 await axios.delete(`/api/posts/${id}`);
 
-		dispatch({
+		dispatch({ 
 			type: DELETE_POST,
 			payload: id,
 		});
@@ -173,7 +173,7 @@ export const addComment = (postId, formData) => async (dispatch) => {
 // Delete comment
 export const deleteComment = (postId, commentId) => async (dispatch) => {
 	try {
-		const res = await axios.delete(`/api/posts/comment/${postId}/${commentId}`);
+		 await axios.delete(`/api/posts/comment/${postId}/${commentId}`);
 
 		dispatch({
 			type: REMOVE_COMMENT,
